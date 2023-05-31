@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/picocss/1.5.2/pico.min.css"
+      integrity="sha512-3gFq2IXMVlAQaUyahzhjDRivv0yqyXTb7xiy6ivTaG5Uz4hKI54uYxpQefdomgDVQ11eJVUbXG0YdPMDISiGgg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+  </head>
+  <body class="container">
+    <h1>Validame</h1>
+    <form action="">
+      <label for="dni">Dni/Nie</label>
+      <input
+        type="text"
+        name="dni"
+        id="dni"
+        placeholder="40123456T o X2345679Y"
+        pattern="([0-9]|[XYZ])[0-9]{8}[A-Z]"
+        title="QUE TE HAS EQUIVOAO!!"
+        required
+      />
+      <label for="hexadecimal">Color hexadecimal</label>
+      <input
+        type="text"
+        name="hexadecimal"
+        id="hexadecimal"
+        placeholder="#FFAAFF"
+        pattern="#[0-9A-F]{6}"
+        title=""
+        required
+      />
+
+      <label for="matricula">Matricula de coche español</label>
+      <input
+        type="text"
+        name="matricula"
+        id="matricula"
+        placeholder="4023AZ"
+        pattern="[0-9]{4}[A-Z]{2}"
+        title="El formato de la matrícula está mal"
+        required
+      />
+      <input type="submit" value="Validar" />
+    </form>
+  </body>
+</html>
